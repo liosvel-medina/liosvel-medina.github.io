@@ -1,0 +1,181 @@
+<section class="projects section" id="projects">
+    <h3 class="section__subtitle">
+        My <span>Jobs</span>
+    </h3>
+
+    <h2 class="section__title">Recent Projects</h2>
+
+    <div class="projects__container container grid">
+        <article class="projects__card">
+            <img
+                src="/img/project-img-1.jpg"
+                alt="projects image"
+                class="projects__img"
+            />
+
+            <div class="projects__modal">
+                <span class="projects__subtitle">Web</span>
+                <h2 class="projects__title">Modern website</h2>
+                <a href="#" class="projects__button">
+                    View demo <i class="ri-external-link-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="projects__card">
+            <img
+                src="/img/project-img-2.jpg"
+                alt="projects image"
+                class="projects__img"
+            />
+
+            <div class="projects__modal">
+                <span class="projects__subtitle">Web</span>
+                <h2 class="projects__title">Modern website</h2>
+                <a href="#" class="projects__button">
+                    View demo <i class="ri-external-link-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="projects__card">
+            <img
+                src="/img/project-img-3.jpg"
+                alt="projects image"
+                class="projects__img"
+            />
+
+            <div class="projects__modal">
+                <span class="projects__subtitle">Web</span>
+                <h2 class="projects__title">Modern website</h2>
+                <a href="#" class="projects__button">
+                    View demo <i class="ri-external-link-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="projects__card">
+            <img
+                src="/img/project-img-4.jpg"
+                alt="projects image"
+                class="projects__img"
+            />
+
+            <div class="projects__modal">
+                <span class="projects__subtitle">Web</span>
+                <h2 class="projects__title">Modern website</h2>
+                <a href="#" class="projects__button">
+                    View demo <i class="ri-external-link-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="projects__card">
+            <img
+                src="/img/project-img-5.jpg"
+                alt="projects image"
+                class="projects__img"
+            />
+
+            <div class="projects__modal">
+                <span class="projects__subtitle">Web</span>
+                <h2 class="projects__title">Modern website</h2>
+                <a href="#" class="projects__button">
+                    View demo <i class="ri-external-link-line"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="projects__card">
+            <img
+                src="/img/project-img-6.jpg"
+                alt="projects image"
+                class="projects__img"
+            />
+
+            <div class="projects__modal">
+                <span class="projects__subtitle">Web</span>
+                <h2 class="projects__title">Modern website</h2>
+                <a href="#" class="projects__button">
+                    View demo <i class="ri-external-link-line"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<style>
+    /*=============== PROJECTS ===============*/
+    .projects {
+        background-color: var(--container-color);
+    }
+
+    .projects__container {
+        row-gap: 2rem;
+        justify-content: center;
+        padding-block: 1rem;
+    }
+
+    .projects__card {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .projects__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projects__modal {
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            180deg,
+            hsla(0, 0%, 0%, 0) 0%,
+            hsla(var(--hue), 70%, 40%, 0.8) 120%
+        );
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: bottom 0.4s;
+    }
+
+    .projects__card:hover .projects__modal {
+        bottom: 0;
+    }
+
+    .projects__subtitle,
+    .projects__button {
+        color: var(--title-color);
+        font-size: var(--small-font-size);
+    }
+
+    .projects__subtitle {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    .projects__title {
+        font-size: var(--h2-font-size);
+        margin-bottom: 0.75rem;
+    }
+
+    .projects__button {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-weight: var(--font-medium);
+    }
+
+    .projects__button i {
+        font-size: 1.25rem;
+    }
+</style>
