@@ -32,7 +32,12 @@
 
             <p class="contact__message" id="contact-message"></p>
 
-            <button type="submit" class="button contact__button">
+            <button
+                type="submit"
+                class="button contact__button"
+                id="contact-button"
+            >
+                <i class="ri-loader-line rotate-infinite"></i>
                 Send Message
             </button>
         </form>
@@ -73,8 +78,23 @@
     }
 
     .contact__button {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
         justify-self: center;
         cursor: pointer;
+    }
+
+    .contact__button i {
+        display: none;
+    }
+
+    .contact__button:disabled {
+        background-color: var(--first-color-alt);
+    }
+
+    .contact__button:disabled i {
+        display: inline-block;
     }
 
     .contact__message {
@@ -94,10 +114,13 @@
 <script lang="ts">
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById("contact-form"),
-    contactMessage = document.getElementById("contact-message");
+    contactMessage = document.getElementById("contact-message"),
+    contactButton = document.getElementById("contact-button");
 
 const sendEmail = (e) => {
     e.preventDefault();
+
+    contactButton.disabled = true;
 
     // serviceID - templateID - #form - publicKey
     emailjs
@@ -119,11 +142,13 @@ const sendEmail = (e) => {
 
                 // Clear input fields
                 contactForm.reset();
+                contactButton.disabled = false;
             },
             () => {
                 // Show error message
                 contactMessage.textContent =
                     "Message not sent (service error) ❌";
+                contactButton.disabled = false;
             }
         );
 };
