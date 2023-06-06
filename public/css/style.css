@@ -155,9 +155,6 @@ svg {
     /* For animation ScrollReveal */
 }
 
-
-
-
 /*=============== BUTTON ===============*/
 .button {
     display: inline-block;
@@ -172,14 +169,6 @@ svg {
 .button:hover {
     box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
 }
-
-
-
-
-
-
-/*=============== CONTACT ===============*/
-
 
 /*=============== FOOTER ===============*/
 
