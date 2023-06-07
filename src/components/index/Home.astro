@@ -193,4 +193,55 @@
         /* width: 900px; */
         transform: translateX(-35px);
     }
+
+    /* For medium devices */
+    @media screen and (min-width: 576px) {
+        .home__container {
+            grid-template-columns: 360px;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .home__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        .home__data {
+            text-align: initial;
+        }
+
+        .home__social {
+            justify-content: initial;
+        }
+
+        .home__blob {
+            width: 400px;
+        }
+    }
+
+    @media screen and (min-width: 1152px) {
+        .home__container {
+            grid-template-columns: 480px 550px;
+            column-gap: 5rem;
+            padding-block: 2rem 3rem;
+        }
+
+        .home__blob {
+            width: 550px;
+        }
+
+        .home__content {
+            row-gap: 4.5rem;
+        }
+
+        .home__description {
+            margin-block: 1.5rem 2.5rem;
+        }
+
+        .home__social {
+            column-gap: 1.5rem;
+        }
+    }
 </style>

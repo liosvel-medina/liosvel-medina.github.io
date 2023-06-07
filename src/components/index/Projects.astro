@@ -178,4 +178,30 @@
     .projects__button i {
         font-size: 1.25rem;
     }
+
+    /* For medium devices */
+    @media screen and (min-width: 576px) {
+        .projects__container {
+            grid-template-columns: 360px;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .projects__container {
+            grid-template-columns: repeat(2, 352px);
+        }
+    }
+
+    @media screen and (min-width: 1152px) {
+        .projects__container {
+            grid-template-columns: repeat(3, 350px);
+            row-gap: 3rem;
+            padding-block: 2.5rem 4rem;
+        }
+
+        .projects__button {
+            font-size: var(--normal-font-size);
+        }
+    }
 </style>

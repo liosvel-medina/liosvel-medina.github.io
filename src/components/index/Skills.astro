@@ -16,14 +16,14 @@
         </div>
 
         <div class="skills__content">
-            <ol class="skills_group">
+            <ol class="skills__group">
                 <li class="skills__item">HTML & CSS</li>
                 <li class="skills__item">JavaScript</li>
                 <li class="skills__item">Angular</li>
                 <li class="skills__item">Vue</li>
             </ol>
 
-            <ol class="skills_group" start="5">
+            <ol class="skills__group" start="5">
                 <li class="skills__item">Android</li>
                 <li class="skills__item">Java</li>
                 <li class="skills__item">Python</li>
@@ -76,5 +76,57 @@
 
     .skills__item::marker {
         color: var(--first-color);
+    }
+
+    /* For small devices */
+    @media screen and (max-width: 320px) {
+        .skills__content {
+            grid-template-columns: max-content;
+            row-gap: 1rem;
+        }
+    }
+
+    /* For medium devices */
+    @media screen and (min-width: 576px) {
+        .skills__container {
+            grid-template-columns: 360px;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .skills__container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        .skills__data,
+        :is(.skills__data) :is(.section__subtitle, .section__title) {
+            text-align: initial;
+        }
+    }
+
+    @media screen and (min-width: 1152px) {
+        .skills__container {
+            grid-template-columns: 340px 425px;
+            column-gap: 10rem;
+            padding-bottom: 4rem;
+        }
+
+        .skills__description {
+            margin-bottom: 3rem;
+        }
+
+        .skills__content {
+            column-gap: 8rem;
+        }
+
+        .skills__group {
+            row-gap: 1.5rem;
+        }
+
+        .skills__item {
+            font-size: var(--h3-font-size);
+        }
     }
 </style>

@@ -104,6 +104,38 @@
         font-size: var(--small-font-size);
         color: var(--title-color);
     }
+
+    /* For medium devices */
+    @media screen and (min-width: 576px) {
+        .contact__container {
+            grid-template-columns: 360px;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 1152px) {
+        .contact__container {
+            grid-template-columns: 680px;
+            padding-block: 2.5rem 2rem;
+        }
+
+        .contact__form {
+            row-gap: 1.5rem;
+        }
+
+        .contact__group {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1.5rem;
+        }
+
+        .contact__input {
+            padding: 1.5rem;
+        }
+
+        .contact__form textarea {
+            height: 20rem;
+        }
+    }
 </style>
 
 <script

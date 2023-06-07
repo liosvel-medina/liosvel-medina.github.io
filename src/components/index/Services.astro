@@ -68,4 +68,36 @@
         font-size: var(--h2-font-size);
         margin-bottom: 1.5rem;
     }
+
+    /* For small devices */
+    @media screen and (max-width: 320px) {
+        .services__card {
+            padding-block: 1.5rem;
+        }
+    }
+
+    /* For medium devices */
+    @media screen and (min-width: 576px) {
+        .services__container {
+            grid-template-columns: 360px;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .services__container {
+            grid-template-columns: repeat(2, 352px);
+        }
+    }
+
+    @media screen and (min-width: 1152px) {
+        .services__container {
+            grid-template-columns: repeat(3, 352px);
+            padding-block: 2.5rem 4rem;
+        }
+
+        .services__card {
+            padding: 3.5rem 2rem;
+        }
+    }
 </style>
