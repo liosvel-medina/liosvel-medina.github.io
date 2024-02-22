@@ -1,0 +1,44 @@
+[
+  {
+    "id": 2,
+    "name": "StageInHome",
+    "type": "Web",
+    "link": "https://stageinhome.com/",
+    "img": "/img/projects/stageinhome.svg"
+  },
+  {
+    "id": 1,
+    "name": "TracksCO2",
+    "type": "Web",
+    "link": "https://tracksco2.com/projects",
+    "img": "/img/projects/tracksco2.svg"
+  },
+  {
+    "id": 6,
+    "name": "Menú App",
+    "type": "Web",
+    "link": "https://menuapp.pythonanywhere.com/",
+    "img": "/img/projects/menuapp.svg"
+  },
+  {
+    "id": 3,
+    "name": "AAGlass CRM",
+    "type": "Web",
+    "link": "https://app.impactglass.net/",
+    "img": "/img/projects/aaglasscrm.svg"
+  },
+  {
+    "id": 4,
+    "name": "Inscripta ACBCOcc",
+    "type": "Web",
+    "link": "https://legacy.inscripta.sv-vgbtwabxsp.cloud.elastika.pe/",
+    "img": "/img/projects/inscripta.svg"
+  },
+  {
+    "id": 5,
+    "name": "Proyecciones ACBCOcc",
+    "type": "Android",
+    "link": "",
+    "img": "/img/projects/proyecciones.svg"
+  }
+]
