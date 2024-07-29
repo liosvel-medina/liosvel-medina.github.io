@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.5.6",
+    "astro": "^4.12.2",
     "remixicon": "^3.3.0"
   }
 }
